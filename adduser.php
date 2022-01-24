@@ -8,9 +8,9 @@
     $conn=mysqli_connect($dbserver,$dbuser,$dbpass,$dbname);
 
     if (isset($_POST['btn'])){
-            $user=$POST['usr'];
+            $user=$_POST['usr'];
             $pass=md5($_POST['pwd']);
-            $sql="INSERT INTO `tbluser`(`Username`, `password`,) VALUES ('[$user]','[$pass]')";
+            $sql="INSERT INTO tbluser (Username, password) VALUES ('$user','$pass')";
             mysqli_query($conn,$sql);
 
     }
@@ -28,13 +28,14 @@
     <form method="post" action="adduser.php">
         <input type="text" name="usr">
         <input type="password" name="pwd">
-        <input type="submit" name="btn">
+        <input type="submit" name="btn" value="Add user">
     </form>
     <?php
-        $sql="SELECT * FROM ´tbluser`";
+        $sql="SELECT * FROM tbluser";
         $result=mysqli_query($conn,$sql);
+
         while($row=mysqli_fetch_assoc($result)){
-            echo $row['username']."<br>";
+            echo $row['Username']."<br>";
         }
         
     ?>
