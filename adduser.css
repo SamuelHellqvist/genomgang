@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 4rem;
+    width: 50rem;
+    --border: 1px solid black;
+}
+
+#nameinput{
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#passinput{
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+#favoriteteainput{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+#adduserbtn{
+    grid-column: 3;
+    grid-row: 1/4;
+}
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

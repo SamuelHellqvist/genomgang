@@ -1,0 +1,23 @@
+body{
+    background: pink;
+}
+
+.home{
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    color: black;
+    background-color: lightblue;
+}
+
+#listuserhome{
+    font-size: 2.5rem;
+}
+
+.row{
+    border: 1px black solid;
+    width: 50%;
+}
