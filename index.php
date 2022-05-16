@@ -51,7 +51,7 @@
         <input class="blue"type="password" name="pwd" placeholder="password">
         <input class="blue"type="submit" name="btn" value="log in">
     </form>
-    <div .blue>
+    <div class="blue">
         <?=$msg?>
     </div>
     <!--<div class="cat"><img src="https://c.tenor.com/MlohMdhC8NoAAAAC/khat-dancing-cat.gif" alt=""></div>-->
