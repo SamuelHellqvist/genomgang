@@ -32,3 +32,18 @@ input{
 #thebtn{
     left: 25%;
 }
+
+.home{
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    color: black;
+    background-color: lightblue;
+}
+
+.home a{
+    font-size: 2.5rem;
+}

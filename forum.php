@@ -35,7 +35,7 @@
             <div class="list">
             <?php while($row=mysqli_fetch_assoc($result)){ ?>
                 <div class="row">
-                    Username: <span><?=$_SESSION['user']?></span><br> 
+                    Username: <span><?=$row['user']?></span><br> 
                     : <span><?=$row['txt']?></span><br>
                 </div>
             <?php  } ?>
@@ -44,9 +44,13 @@
             <input type="submit" name="btn" id="thebtn">
         </form>
     </div>
-
+            
     <div class="sliding">
         <?=$msg?>
+    </div>
+
+    <div class="home" id="adduserhome">
+        <a href="index.php">home</a>
     </div>
 
 </body>
