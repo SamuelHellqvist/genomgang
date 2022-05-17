@@ -53,5 +53,9 @@
         <a href="index.php">home</a>
     </div>
 
+    <div id="mylittleinfoframe">
+        <h1>To use this function, you need to be logged in!</h1>
+    </div>
+
 </body>
 </html>
